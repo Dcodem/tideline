@@ -1,0 +1,15 @@
+[project]
+name = "tideline"
+version = "0.0.1"
+description = "A small CLI for keeping a daily log."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Daniel Code McNeil", email = "dancodemcneil@gmail.com" }]
+dependencies = ["click>=8.1"]
+
+[project.scripts]
+tideline = "tideline.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
