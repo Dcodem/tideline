@@ -1,3 +1,16 @@
 # tideline
 
-A small CLI for keeping a daily log.
+A small CLI for keeping a daily log. One file, one line per entry.
+
+## Install
+
+```
+pip install -e .
+```
+
+## Usage
+
+```
+tideline new "wrapped up the q2 plan"
+tideline list -n 10
+```
