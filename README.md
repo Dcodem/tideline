@@ -15,3 +15,5 @@ tideline new "wrapped up the q2 plan"
 tideline list -n 10
 ```
 
+
+Or install from PyPI once published.
