@@ -17,3 +17,5 @@ tideline list -n 10
 
 
 Or install from PyPI once published.
+
+Weekly review: `tideline find '#review' && tideline stats`.
