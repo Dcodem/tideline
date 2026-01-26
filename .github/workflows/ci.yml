@@ -17,3 +17,4 @@ jobs:
           cache: pip
       - run: pip install -e .[dev]
       - run: pytest -q
+      - run: pytest --cov=tideline -q
