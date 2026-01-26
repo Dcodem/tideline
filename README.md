@@ -19,3 +19,9 @@ tideline list -n 10
 Or install from PyPI once published.
 
 Weekly review: `tideline find '#review' && tideline stats`.
+
+## Roadmap
+
+- sqlite backend (optional)
+- richer search
+- markdown export
