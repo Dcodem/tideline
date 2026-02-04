@@ -25,3 +25,5 @@ Weekly review: `tideline find '#review' && tideline stats`.
 - sqlite backend (optional)
 - richer search
 - markdown export
+
+`tideline edit` opens the raw log in your $EDITOR.
