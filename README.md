@@ -27,3 +27,5 @@ Weekly review: `tideline find '#review' && tideline stats`.
 - markdown export
 
 `tideline edit` opens the raw log in your $EDITOR.
+
+Simple, really.
