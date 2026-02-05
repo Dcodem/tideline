@@ -21,3 +21,5 @@ def list_(limit):
     """List recent entries."""
     for line in storage.recent(limit):
         click.echo(line.rstrip())
+
+# entrypoint for `tideline` script
