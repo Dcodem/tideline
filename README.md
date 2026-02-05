@@ -29,3 +29,5 @@ Weekly review: `tideline find '#review' && tideline stats`.
 `tideline edit` opens the raw log in your $EDITOR.
 
 Simple, really.
+
+<!-- coverage badge TBD -->
