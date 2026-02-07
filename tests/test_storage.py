@@ -8,3 +8,9 @@ def test_add_and_recent(tmp_path, monkeypatch):
     assert len(out) == 2
     assert "hello" in out[0]
     assert "world" in out[1]
+
+
+from tideline.tags import extract
+
+def test_extract_tags():
+    assert extract('hello #work #q2-plan') == ['work', 'q2-plan']
