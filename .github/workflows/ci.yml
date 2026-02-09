@@ -16,5 +16,6 @@ jobs:
           python-version: ${{ matrix.python }}
           cache: pip
       - run: pip install -e .[dev]
+      - run: ruff check .
       - run: pytest -q
       - run: pytest --cov=tideline -q
