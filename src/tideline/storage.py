@@ -1,7 +1,8 @@
 from pathlib import Path
 from datetime import datetime
 
-LOG = Path.home() / ".tideline" / "log.txt"
+from .config import log_path
+LOG = log_path()
 
 def add_entry(text: str) -> None:
     LOG.parent.mkdir(parents=True, exist_ok=True)
