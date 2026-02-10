@@ -32,3 +32,10 @@ def find(query):
     from .search import find as _find
     for line in _find(query):
         click.echo(line.rstrip())
+
+
+@main.command()
+def export():
+    """Export entries as JSON."""
+    from .export import to_json
+    click.echo(to_json())
