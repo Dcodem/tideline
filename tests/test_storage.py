@@ -20,3 +20,8 @@ def test_blank_ignored(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, 'LOG', tmp_path / 'l.txt')
     storage.add_entry('   ')
     assert storage.recent() == []
+
+
+def test_extract_preserves_order():
+    from tideline.tags import extract
+    assert extract('#b #a') == ['b','a']
