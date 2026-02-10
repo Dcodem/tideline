@@ -31,3 +31,5 @@ Weekly review: `tideline find '#review' && tideline stats`.
 Simple, really.
 
 <!-- coverage badge TBD -->
+
+`tideline stats` prints the most-used tags.
