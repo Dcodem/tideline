@@ -23,3 +23,12 @@ def list_(limit):
         click.echo(line.rstrip())
 
 # entrypoint for `tideline` script
+
+
+@main.command()
+@click.argument("query")
+def find(query):
+    """Search entries."""
+    from .search import find as _find
+    for line in _find(query):
+        click.echo(line.rstrip())
