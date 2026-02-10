@@ -14,3 +14,5 @@ def recent(limit: int = 20):
     if not LOG.exists():
         return []
     return LOG.read_text().splitlines()[-limit:]
+
+# mkdir is idempotent
