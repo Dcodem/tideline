@@ -1,6 +1,6 @@
 # tideline
 
-A tiny CLI for keeping a daily log. One file, one line per entry.
+A tiny CLI for keeping a daily log. One file, one line per entry. Simple as that.
 
 ## Install
 
