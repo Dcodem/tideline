@@ -39,3 +39,11 @@ def export():
     """Export entries as JSON."""
     from .export import to_json
     click.echo(to_json())
+
+
+@main.command()
+def edit():
+    """Open the log file in $EDITOR."""
+    import os, subprocess
+    from .config import log_path
+    subprocess.call([os.environ.get("EDITOR", "vi"), str(log_path())])
