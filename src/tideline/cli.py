@@ -47,3 +47,11 @@ def edit():
     import os, subprocess
     from .config import log_path
     subprocess.call([os.environ.get("EDITOR", "vi"), str(log_path())])
+
+
+@main.command()
+def stats():
+    """Show tag frequency."""
+    from .stats import tag_counts
+    for tag, n in tag_counts().most_common(20):
+        click.echo(f"{n:>4}  #{tag}")
