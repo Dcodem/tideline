@@ -33,3 +33,5 @@ Simple, really.
 <!-- coverage badge TBD -->
 
 `tideline stats` prints the most-used tags.
+
+Not safe for concurrent writes from multiple processes.
