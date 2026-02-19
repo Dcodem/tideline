@@ -25,3 +25,11 @@ def test_blank_ignored(tmp_path, monkeypatch):
 def test_extract_preserves_order():
     from tideline.tags import extract
     assert extract('#b #a') == ['b','a']
+
+
+def test_pop_last(tmp_path, monkeypatch):
+    monkeypatch.setattr(storage, 'LOG', tmp_path / 'l.txt')
+    storage.add_entry('one')
+    storage.add_entry('two')
+    assert 'two' in storage.pop_last()
+    assert len(storage.recent()) == 1
