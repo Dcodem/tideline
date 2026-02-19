@@ -16,3 +16,14 @@ def recent(limit: int = 20):
     return LOG.read_text().splitlines()[-limit:]
 
 # mkdir is idempotent
+
+
+def pop_last() -> str | None:
+    if not LOG.exists():
+        return None
+    lines = LOG.read_text().splitlines()
+    if not lines:
+        return None
+    last = lines[-1]
+    LOG.write_text("\n".join(lines[:-1]) + ("\n" if lines[:-1] else ""))
+    return last

@@ -55,3 +55,13 @@ def stats():
     from .stats import tag_counts
     for tag, n in tag_counts().most_common(20):
         click.echo(f"{n:>4}  #{tag}")
+
+
+@main.command()
+def undo():
+    """Remove the most recent entry."""
+    last = storage.pop_last()
+    if last:
+        click.echo(f"removed: {last}")
+    else:
+        click.echo("nothing to remove")
