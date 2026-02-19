@@ -65,3 +65,13 @@ def undo():
         click.echo(f"removed: {last}")
     else:
         click.echo("nothing to remove")
+
+
+@main.command()
+def today():
+    """Show today's entries."""
+    from datetime import date
+    stamp = date.today().isoformat()
+    for line in storage.recent(10_000):
+        if line.startswith(stamp):
+            click.echo(line.rstrip())
