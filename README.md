@@ -35,3 +35,5 @@ Simple, really.
 `tideline stats` prints the most-used tags.
 
 Not safe for concurrent writes from multiple processes.
+
+Export is a JSON array of `{ts, text}` objects.
