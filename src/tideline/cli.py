@@ -75,3 +75,5 @@ def today():
     for line in storage.recent(10_000):
         if line.startswith(stamp):
             click.echo(line.rstrip())
+
+# `today` prints nothing if no entries match
