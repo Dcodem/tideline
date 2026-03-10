@@ -3,7 +3,7 @@ name = "tideline"
 version = "0.1.0"
 description = "A small CLI for keeping a daily log."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [{ name = "Daniel Code McNeil", email = "dancodemcneil@gmail.com" }]
 dependencies = ["click>=8.1"]
 
