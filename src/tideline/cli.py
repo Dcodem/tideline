@@ -77,3 +77,5 @@ def today():
             click.echo(line.rstrip())
 
 # `today` prints nothing if no entries match
+
+# import-time work kept minimal for fast startup
