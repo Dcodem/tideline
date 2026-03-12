@@ -5,6 +5,8 @@ from .config import log_path
 LOG = log_path()
 
 def add_entry(text: str) -> None:
+    if not text.strip():
+        return
     LOG.parent.mkdir(parents=True, exist_ok=True)
     with LOG.open("a") as f:
         f.write(f"{datetime.now().isoformat(timespec='seconds')}\t{text}\n")
