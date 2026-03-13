@@ -37,3 +37,5 @@ Simple, really.
 Not safe for concurrent writes from multiple processes.
 
 Export is a JSON array of `{ts, text}` objects.
+
+Set `TIDELINE_LOG` to point at a different file.
