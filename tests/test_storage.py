@@ -33,3 +33,11 @@ def test_pop_last(tmp_path, monkeypatch):
     storage.add_entry('two')
     assert 'two' in storage.pop_last()
     assert len(storage.recent()) == 1
+
+
+def test_export_smoke(tmp_path, monkeypatch):
+    monkeypatch.setattr(storage, 'LOG', tmp_path / 'l.txt')
+    storage.add_entry('a')
+    from tideline.export import to_json
+    import json
+    assert json.loads(to_json())
