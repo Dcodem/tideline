@@ -8,3 +8,5 @@ def tag_counts() -> Counter:
     return c
 
 # single source of truth for log iteration
+
+# returns empty Counter when no entries
