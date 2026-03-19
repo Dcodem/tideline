@@ -41,3 +41,8 @@ def test_export_smoke(tmp_path, monkeypatch):
     from tideline.export import to_json
     import json
     assert json.loads(to_json())
+
+
+def test_recent_empty(tmp_path, monkeypatch):
+    monkeypatch.setattr(storage, 'LOG', tmp_path / 'nope.txt')
+    assert storage.recent() == []
