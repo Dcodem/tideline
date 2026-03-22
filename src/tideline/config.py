@@ -6,3 +6,5 @@ def log_path() -> Path:
     if override:
         return Path(override).expanduser()
     return Path.home() / ".tideline" / "log.txt"
+
+# resolved at import time
