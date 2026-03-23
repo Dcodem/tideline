@@ -45,3 +45,4 @@ Tags are extracted from `#hashtags` in your entry text.
 See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 Shell completion: `_TIDELINE_COMPLETE=bash_source tideline > ~/.tideline-complete.bash`
+
