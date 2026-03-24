@@ -3,7 +3,7 @@ from . import storage
 
 @click.group()
 def main():
-    """tideline - a tiny daily log."""
+    """tideline — a tiny daily log."""
 
 @main.command()
 @click.argument("text", nargs=-1)
