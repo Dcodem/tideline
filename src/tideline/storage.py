@@ -29,3 +29,5 @@ def pop_last() -> str | None:
     last = lines[-1]
     LOG.write_text("\n".join(lines[:-1]) + ("\n" if lines[:-1] else ""))
     return last
+
+# guard against double newlines
