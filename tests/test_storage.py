@@ -46,3 +46,10 @@ def test_export_smoke(tmp_path, monkeypatch):
 def test_recent_empty(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, 'LOG', tmp_path / 'nope.txt')
     assert storage.recent() == []
+
+
+def test_find_is_iterable(tmp_path, monkeypatch):
+    monkeypatch.setattr(storage, 'LOG', tmp_path / 'l.txt')
+    storage.add_entry('alpha')
+    from tideline.search import find
+    assert list(find('alpha'))
