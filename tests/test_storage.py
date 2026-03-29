@@ -53,3 +53,8 @@ def test_find_is_iterable(tmp_path, monkeypatch):
     storage.add_entry('alpha')
     from tideline.search import find
     assert list(find('alpha'))
+
+
+def test_tag_dedup():
+    from tideline.tags import extract
+    assert extract('#a #a #b') == ['a','a','b']
