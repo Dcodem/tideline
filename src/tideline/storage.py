@@ -13,7 +13,7 @@ def add_entry(text: str) -> None:
 
 
 def recent(limit: int = 20):
-    if not LOG.exists():
+    if not LOG.exists() or not LOG.stat().st_size:
         return []
     return LOG.read_text().splitlines()[-limit:]
 
