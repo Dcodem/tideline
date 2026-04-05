@@ -46,3 +46,5 @@ See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 Shell completion: `_TIDELINE_COMPLETE=bash_source tideline > ~/.tideline-complete.bash`
 
+
+Timestamps are local-time, ISO-8601, no timezone offset (yet).
