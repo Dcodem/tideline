@@ -48,3 +48,5 @@ Shell completion: `_TIDELINE_COMPLETE=bash_source tideline > ~/.tideline-complet
 
 
 Timestamps are local-time, ISO-8601, no timezone offset (yet).
+
+Vim users: `:!tideline new <c-r>%` writes the current line as an entry.
