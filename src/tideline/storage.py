@@ -31,3 +31,4 @@ def pop_last() -> str | None:
     return last
 
 # guard against double newlines
+
