@@ -19,3 +19,5 @@ jobs:
       - run: ruff check .
       - run: pytest -q
       - run: pytest --cov=tideline -q
+
+# TODO: paths-ignore for docs-only changes
