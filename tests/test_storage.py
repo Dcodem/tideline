@@ -58,3 +58,9 @@ def test_find_is_iterable(tmp_path, monkeypatch):
 def test_tag_dedup():
     from tideline.tags import extract
     assert extract('#a #a #b') == ['a','a','b']
+
+
+def test_stats_empty(tmp_path, monkeypatch):
+    monkeypatch.setattr(storage, 'LOG', tmp_path / 'x.txt')
+    from tideline.stats import tag_counts
+    assert tag_counts() == {}
