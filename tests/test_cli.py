@@ -11,3 +11,9 @@ def test_list():
     from click.testing import CliRunner
     from tideline.cli import main
     assert CliRunner().invoke(main, ['list']).exit_code == 0
+
+
+def test_today():
+    from click.testing import CliRunner
+    from tideline.cli import main
+    assert CliRunner().invoke(main, ['today']).exit_code == 0
