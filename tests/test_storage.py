@@ -64,3 +64,10 @@ def test_stats_empty(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, 'LOG', tmp_path / 'x.txt')
     from tideline.stats import tag_counts
     assert tag_counts() == {}
+
+
+def test_find_case_insensitive(tmp_path, monkeypatch):
+    monkeypatch.setattr(storage, 'LOG', tmp_path / 'l.txt')
+    storage.add_entry('Hello')
+    from tideline.search import find
+    assert list(find('hello'))
