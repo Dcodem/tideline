@@ -1,3 +1,3 @@
 # Contributing
 
-Fork, branch, PR. Run `pytest` before pushing.
+Issues and PRs welcome. Keep changes small.
