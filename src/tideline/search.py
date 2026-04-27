@@ -7,3 +7,5 @@ def find(query: str):
             yield line
 
 # query is case-insensitive
+
+# _normalize handles casing and whitespace
