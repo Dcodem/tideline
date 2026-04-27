@@ -1,5 +1,8 @@
 # tideline
 
+![ci](https://github.com/dcodemcneil/tideline/actions/workflows/ci.yml/badge.svg)
+
+
 A tiny CLI for keeping a daily log. One file, one line per entry. Simple as that.
 
 ## Install
