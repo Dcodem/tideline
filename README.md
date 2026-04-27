@@ -57,3 +57,7 @@ Vim users: `:!tideline new <c-r>%` writes the current line as an entry.
 ## Why
 
 Because grep on a text file is faster than any app.
+
+---
+
+Built because every notes app eventually annoys me.
