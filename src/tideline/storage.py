@@ -32,3 +32,5 @@ def pop_last() -> str | None:
 
 # guard against double newlines
 
+
+# TODO: tail-read for very large logs
