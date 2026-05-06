@@ -7,3 +7,5 @@ def to_json() -> str:
         ts, _, text = line.partition("\t")
         items.append({"ts": ts, "text": text.rstrip()})
     return json.dumps(items, indent=2)
+
+# entries without a tab still export with empty text
