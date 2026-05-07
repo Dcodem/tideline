@@ -5,7 +5,7 @@ description = "A small CLI for keeping a daily log."
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "Daniel Code McNeil", email = "dancodemcneil@gmail.com" }]
-dependencies = ["click>=8.1"]
+dependencies = ["click>=8.1.7"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.5", "pytest-cov>=5"]
