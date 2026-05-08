@@ -34,3 +34,5 @@ def pop_last() -> str | None:
 
 
 # TODO: tail-read for very large logs
+
+# pop_last: ensures file ends without stray blank line
