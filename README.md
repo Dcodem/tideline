@@ -63,3 +63,4 @@ Because grep on a text file is faster than any app.
 Built because every notes app eventually annoys me.
 
 MIT licensed.
+
