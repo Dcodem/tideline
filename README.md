@@ -64,3 +64,5 @@ Built because every notes app eventually annoys me.
 
 MIT licensed.
 
+
+Or install from PyPI once published.
