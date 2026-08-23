@@ -16,5 +16,3 @@ tideline = "tideline.cli:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-"click>=8.1.7,<9"
