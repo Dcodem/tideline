@@ -1,7 +1,7 @@
-from pathlib import Path
 from datetime import datetime
 
 from .config import log_path
+
 LOG = log_path()
 
 def add_entry(text: str) -> None:

@@ -1,5 +1,7 @@
 from collections import Counter
+
 from . import storage, tags
+
 
 def tag_counts() -> Counter:
     c = Counter()
