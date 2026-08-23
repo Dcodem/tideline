@@ -1,4 +1,6 @@
 from tideline import storage
+from tideline.tags import extract
+
 
 def test_add_and_recent(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, "LOG", tmp_path / "log.txt")
@@ -9,8 +11,6 @@ def test_add_and_recent(tmp_path, monkeypatch):
     assert "hello" in out[0]
     assert "world" in out[1]
 
-
-from tideline.tags import extract
 
 def test_extract_tags():
     assert extract('hello #work #q2-plan') == ['work', 'q2-plan']
@@ -23,7 +23,6 @@ def test_blank_ignored(tmp_path, monkeypatch):
 
 
 def test_extract_preserves_order():
-    from tideline.tags import extract
     assert extract('#b #a') == ['b','a']
 
 
@@ -38,8 +37,9 @@ def test_pop_last(tmp_path, monkeypatch):
 def test_export_smoke(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, 'LOG', tmp_path / 'l.txt')
     storage.add_entry('a')
-    from tideline.export import to_json
     import json
+
+    from tideline.export import to_json
     assert json.loads(to_json())
 
 
@@ -56,7 +56,6 @@ def test_find_is_iterable(tmp_path, monkeypatch):
 
 
 def test_tag_dedup():
-    from tideline.tags import extract
     assert extract('#a #a #b') == ['a','a','b']
 
 

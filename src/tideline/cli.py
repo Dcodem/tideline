@@ -2,6 +2,7 @@ import click
 
 from . import storage
 
+
 @click.group()
 def main():
     """tideline — a tiny daily log."""

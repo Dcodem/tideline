@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+
 def log_path() -> Path:
     override = os.environ.get("TIDELINE_LOG")
     if override:

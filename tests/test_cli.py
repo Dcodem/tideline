@@ -1,5 +1,7 @@
 from click.testing import CliRunner
+
 from tideline.cli import main
+
 
 def test_help():
     r = CliRunner().invoke(main, ['--help'])

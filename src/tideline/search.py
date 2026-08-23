@@ -1,5 +1,6 @@
 from . import storage
 
+
 def find(query: str):
     q = query.lower()
     for line in storage.recent(10_000):
