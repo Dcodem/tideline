@@ -1,4 +1,3 @@
-from pathlib import Path
 from datetime import datetime
 
 from .config import log_path

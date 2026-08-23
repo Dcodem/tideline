@@ -1,4 +1,5 @@
 import click
+
 from . import storage
 
 @click.group()
@@ -44,7 +45,9 @@ def export():
 @main.command()
 def edit():
     """Open the log file in $EDITOR."""
-    import os, subprocess
+    import os
+    import subprocess
+
     from .config import log_path
     subprocess.call([os.environ.get("EDITOR", "vi"), str(log_path())])
 
@@ -79,5 +82,3 @@ def today():
 # `today` prints nothing if no entries match
 
 # import-time work kept minimal for fast startup
-
-
